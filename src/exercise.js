@@ -205,23 +205,27 @@ function arrayToString(arrayOfChars){
 // Buzz
 // Solution
 function fizzBuzz(maxNumber){
-    for (let i = 1; i <= maxNumber; i++){
-        
-        let multiple = "";
 
-        if ((i%3 === 0) && (i%5 === 0)){
+    let currentNum = 0;
+
+    for (let i = 0; i < maxNumber; i++){
+        
+        currentNum = i + 1;
+
+        if ((currentNum % 3 === 0) && (currentNum % 5 === 0)){
             console.log("FizzBuzz");
-        }else if(i%3 === 0){
+        }else if(currentNum % 3 === 0){
             console.log("Fizz");
-        }else if((i%5 === 0)){
-            console.log("Fizz");
+        }else if((currentNum % 5 === 0)){
+            console.log("Buzz");
         } else{
-            console.log(i);
+            console.log(currentNum);
         }
     }
 
 }
 
+fizzBuzz(15);
 
 
 // Exercise 17
